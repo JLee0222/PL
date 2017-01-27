@@ -6,7 +6,7 @@ let rec range n =
 let rec reverse xs =
 	match xs with
 	| [] -> []
-	| hd :: tl -> (reverse (tail)) @ [head];;
+	| hd :: tl -> (reverse (tl)) @ [hd];;
 
 let rec mem x xs =
 	match xs with
